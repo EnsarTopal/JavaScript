@@ -1,3 +1,5 @@
+//----------------------------------------------------------------------
+/*
 let score = prompt("Lütfen puanınızı giriniz: ");
 let textinfo;
 if (score >= 0 && score <= 100) {
@@ -36,14 +38,18 @@ else {
 let info = document.querySelector("#info")
 info.innerHTML = `${textinfo} → ${score}`
 
-/*
-0-49 → FF
-50-59 → FD
-60-64 → DD
-65-69 → DC
-70-74 → CC
-75-79 → CB
-80-84 → BB
-85-89 → BA
-90-100 → AA
 */
+
+Date.prototype.lastYear = function () {
+    return this.getFullYear() - 1;
+}
+console.log(new Date().lastYear());
+
+Array.prototype.map = function () {
+    let arr = [];
+    for (let i = 0; i < this.length; i++) {
+        arr.push((this[i] + ':D'))
+    }
+    return arr
+}
+console.log([1, 2, 3].map());
