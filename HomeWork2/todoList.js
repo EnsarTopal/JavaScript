@@ -5,7 +5,6 @@ let ulDOM = document.getElementsByTagName("li");
 
 
 let veriler = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-console.log(veriler);
 veriler.push(taskDOM.value);
 
 
