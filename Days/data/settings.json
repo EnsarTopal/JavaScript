@@ -1,0 +1,8 @@
+{
+    "userName": "Virgie",
+    "password": 12345678,
+    "serverIP": "156.111.78.192",
+    "serverName": "http://uncommon-intention.net",
+    "isActive": true,
+    "IDs":[1,2,3,4,5,6,7,8,9]
+}
