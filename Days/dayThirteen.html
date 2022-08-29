@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dayThirteen</title>
+    <style>
+        kbd {
+            border-radius: 2px;
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        fieldset {
+            background-color: #eeeeee;
+        }
+
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        code {
+            font-family: Consolas, "courier new";
+            color: crimson;
+            background-color: #f1f1f1;
+            padding: 2px;
+            font-size: 105%;
+        }
+
+        bdo {
+            unicode-bidi: bidi-override;
+        }
+
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+            background: white;
+        }
+
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        mark {
+            background-color: rgb(35, 6, 141);
+            color: rgb(217, 255, 0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <details>
+        <bdo dir="rtl">
+            This text will go right-to-left.
+        </bdo><br>
+        <button>
+            <h4>Bu sayfa html tag'larını denemek için oluşturulmuştur!</h4>
+        </button>
+    </details>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+    <div style="width:200px;overflow:auto">
+        <pre>This is a pre with a fixed width. It will use as much space as specified.</pre>
+    </div>
+
+
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="Japaneese Cars">
+            <option value="Toyota">Toyota</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Nissan">Nissan</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="Volkswagen">Volkswagen</option>
+        </optgroup>
+    </select>
+
+
+
+    <form action="/Days/dayNine.html">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="midname">Middle name:</label>
+            <input type="text" id="midname" name="midname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+
+
+    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+
+
+
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet Explorer.</p>
+        </article>
+    </article>
+
+    <p>Do not forget to buy <mark>MILK</mark> today.</p>
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="96" max="250"> 96% </progress>
+
+    <script src="dayThirteen.js"></script>
+</body>
+
+</html>
