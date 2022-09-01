@@ -13,7 +13,7 @@
     <h1>HEEELLLLOOOOOOOOOOOOOO</h1>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="daySixteen.js"></script>
+    <script type="module" src="daySixteen.js"></script>
     <!--
     <script>
         var globalSecret = '1234'
@@ -27,6 +27,14 @@
             $ = undefined
             globalSecret = '0'
         })(jQuery, globalSecret)
+    </script>
+    -->
+
+    <!--
+    <script type="module">
+        import fight, { jump } from 'script'
+        console.log(fight("Jack", "Aldor"))
+        console.log(jump)
     </script>
     -->
 </body>
